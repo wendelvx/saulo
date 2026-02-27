@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Dumbbell, UtensilsOff, ZapOff } from "lucide-react";
+import { Dumbbell, Utensils, Zap } from "lucide-react";
 
 const cards = [
   {
@@ -10,12 +10,12 @@ const cards = [
   {
     title: "Dieta sem Treino",
     description: "Você perde peso, mas fica com aspecto de flacidez e sem energia, perdendo massa magra essencial.",
-    icon: <UtensilsOff className="text-brand-lime" size={32} />
+    icon: <Utensils className="text-brand-lime" size={32} />
   },
   {
     title: "Falta de Ajuste",
     description: "Estratégias genéricas que não consideram sua bioquímica individual. O resultado? Estagnação.",
-    icon: <ZapOff className="text-brand-lime" size={32} />
+    icon: <Zap className="text-brand-lime" size={32} />
   }
 ];
 
