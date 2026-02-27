@@ -10,7 +10,7 @@ const testimonials = [
 
 export default function SocialProof() {
   return (
-    <section className="py-24 bg-brand-black overflow-hidden">
+    <section id="resultados" className="py-24 bg-brand-black overflow-hidden">
       <div className="container mx-auto px-6 mb-16 text-center">
         <h2 className="text-3xl lg:text-5xl font-display font-black mb-4">
           RESULTADOS QUE <span className="text-brand-lime">FALAM POR SI</span>

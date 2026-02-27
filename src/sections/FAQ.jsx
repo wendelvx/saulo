@@ -29,7 +29,7 @@ export default function FAQ() {
   const [active, setActive] = useState(null);
 
   return (
-    <section className="py-24 px-6 bg-brand-black">
+    <section id="faq" className="py-24 px-6 bg-brand-black">
       <div className="container mx-auto max-w-3xl">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

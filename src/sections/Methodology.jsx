@@ -10,7 +10,7 @@ export default function Methodology() {
   ];
 
   return (
-    <section className="py-24 px-6 relative overflow-hidden">
+    <section id="metodologia" className="py-24 px-6 relative overflow-hidden">
       {/* Elemento Visual de Fundo (Glow) */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-lime/5 blur-[120px] rounded-full pointer-events-none" />
 
