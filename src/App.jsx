@@ -2,11 +2,12 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import TheGap from "./sections/TheGap";
-import Experience from "./sections/Experience"; // Nova Seção
+import Experience from "./sections/Experience";
 import Methodology from "./sections/Methodology";
 import SocialProof from "./sections/SocialProof";
-import CostOfInaction from "./sections/CostOfInaction"; // Nova Seção
+import CostOfInaction from "./sections/CostOfInaction";
 import FAQ from "./sections/FAQ";
+import Footer from "./components/Footer"; // Importando o novo Footer
 import ConversionTools from "./components/ConversionTools";
 
 function App() {
@@ -37,32 +38,15 @@ function App() {
       <div className="h-px w-full bg-gradient-to-r from-transparent via-white/5 to-transparent" />
       
       <TheGap />
-
-      {/* Experiência Mental: Onde o usuário se visualiza no projeto */}
       <Experience />
-
       <Methodology />
-
       <SocialProof />
-
-      {/* Gatilho de Urgência: O impacto de não agir agora */}
       <CostOfInaction />
-
       <FAQ />
 
-      {/* Footer */}
-      <footer className="py-20 border-t border-white/5 bg-black text-center space-y-4 pb-32 md:pb-20">
-        <div className="font-display font-black text-xl opacity-50">
-          SAULO <span className="text-brand-lime italic font-light">VITORINO</span>
-        </div>
-        <p className="text-gray-600 text-xs max-w-xs mx-auto">
-          CREF 000000-G/XX | CRN 00000/P<br />
-          Estratégia Integrada • Presencial & Online
-        </p>
-        <p className="text-[10px] text-gray-800 uppercase tracking-[0.3em] pt-8">
-          Desenvolvido com Tecnologia Premium
-        </p>
-      </footer>
+      {/* Footer Componentizado */}
+      <Footer />
+      
     </main>
   );
 }

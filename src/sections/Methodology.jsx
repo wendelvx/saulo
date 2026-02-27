@@ -44,7 +44,7 @@ export default function Methodology() {
                   <Activity size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-white italic uppercase">Biomecânica (CREF)</h3>
+                  <h3 className="text-xl font-bold mb-2 text-white italic uppercase">Biomecânica</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
                     Seja no acompanhamento presencial ou na consultoria, cada exercício é ajustado para a sua estrutura, garantindo máxima tensão mecânica com segurança total.
                   </p>
@@ -63,7 +63,7 @@ export default function Methodology() {
                   <Microscope size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-white italic uppercase">Bioquímica (CRN)</h3>
+                  <h3 className="text-xl font-bold mb-2 text-white italic uppercase">Bioquímica</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
                     Nutrição funcional que respeita seu metabolismo. O foco é fornecer o substrato exato para sua performance no treino e recuperação acelerada.
                   </p>
