@@ -21,9 +21,14 @@ export default function SocialProof() {
       {/* Slider Infinito (Marquee) */}
       <div className="flex overflow-hidden group">
         <motion.div 
-          className="flex gap-6 whitespace-nowrap"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+          className="flex gap-6 whitespace-nowrap w-max" // w-max garante o cálculo correto do loop
+          initial={{ x: 0 }}
+          animate={{ x: "-50%" }}
+          transition={{ 
+            ease: "linear", 
+            duration: 20, 
+            repeat: Infinity 
+          }}
         >
           {/* Duplicamos a lista para o efeito infinito ser perfeito */}
           {[...testimonials, ...testimonials].map((t, i) => (

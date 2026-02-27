@@ -48,7 +48,7 @@ export default function Hero() {
           {/* Container "Bento" Clean: fundo branco para casar com a foto e borda sutil */}
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-white shadow-2xl">
             <img 
-              src="/saulo-vitorino.png" 
+              src="/saulo-vitorino.webp" 
               alt="Saulo Vitorino" 
               className="relative z-10 max-h-[500px] lg:max-h-[600px] w-full object-contain"
             />
