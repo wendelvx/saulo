@@ -21,7 +21,7 @@ export default function CostOfInaction() {
             O tempo é o único recurso que você não recupera. O custo de não decidir hoje é somar mais meses de estagnação e frustração ao seu histórico.
           </p>
           <div className="h-px w-24 bg-brand-lime mx-auto mb-8" />
-          <p className="text-brand-lime font-bold tracking-tighter text-xl uppercase italic">
+          <p className="text-brand-lime font-bold text-xl uppercase italic">
             A decisão mais cara é não fazer nada.
           </p>
         </motion.div>
