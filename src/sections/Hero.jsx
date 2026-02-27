@@ -5,12 +5,12 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
-        {/* Texto e Conteúdo */}
+        {/* Texto e Conteúdo - Invertido no mobile com order-2 */}
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="z-10"
+          className="z-10 order-2 lg:order-1"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-lime/30 bg-brand-lime/10 text-brand-lime text-sm font-bold mb-6">
             <span className="w-2 h-2 rounded-full bg-brand-lime animate-pulse" />
@@ -30,17 +30,16 @@ export default function Hero() {
           </button>
         </motion.div>
 
-        {/* Imagem do Saulo */}
+        {/* Imagem do Saulo - Primeiro no mobile com order-1 */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="relative flex justify-center"
+          className="relative flex justify-center order-1 lg:order-2"
         >
           {/* Círculo de brilho atrás da foto */}
           <div className="absolute inset-0 bg-brand-lime/20 blur-[120px] rounded-full" />
           
-          {/* Substitua pela foto real do Saulo */}
           <img 
             src="/saulo-vitorino.png" 
             alt="Saulo Vitorino" 
