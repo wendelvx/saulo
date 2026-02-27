@@ -3,10 +3,10 @@ import { Activity, Microscope, CheckCircle2 } from "lucide-react";
 
 export default function Methodology() {
   const points = [
-    "Ajuste de macros baseado na carga de treino semanal",
-    "Periodização nutricional para fases de ganho ou corte",
+    "Ajuste de macros baseado na sua carga de treino semanal",
+    "Periodização nutricional para fases de ganho ou definição",
     "Suplementação estratégica baseada em exames e objetivos",
-    "Correção biomecânica via análise de vídeo (Consultoria)"
+    "Ajuste técnico refinado (Presencial ou via análise de vídeo)"
   ];
 
   return (
@@ -21,13 +21,13 @@ export default function Methodology() {
             whileInView={{ opacity: 1 }}
             className="text-brand-lime font-bold tracking-[0.2em] text-sm uppercase"
           >
-            O Diferencial Técnico
+            Meu Diferencial Técnico
           </motion.span>
-          <h2 className="text-4xl lg:text-6xl font-display font-black mt-4 mb-6">
+          <h2 className="text-4xl lg:text-6xl font-display font-black mt-4 mb-6 uppercase italic">
             Metodologia <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Cérebro Único</span>
           </h2>
-          <p className="text-gray-400 text-lg">
-            Esqueça o nutricionista que não entende de agachamento e o treinador que ignora sua microbiota. Saulo Vitorino une as duas áreas em uma única estratégia integrada.
+          <p className="text-gray-400 text-lg leading-relaxed">
+            Eu elimino o abismo entre a sua alimentação e o seu treino. Em vez de profissionais que não se comunicam, você tem uma <span className="text-white font-medium">estratégia única e integrada</span>, desenhada por quem domina as duas áreas.
           </p>
         </div>
 
@@ -44,9 +44,9 @@ export default function Methodology() {
                   <Activity size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-white">Biomecânica (CREF)</h3>
+                  <h3 className="text-xl font-bold mb-2 text-white italic uppercase">Biomecânica (CREF)</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    Treinos desenhados para a sua estrutura óssea e muscular, focando em máxima tensão mecânica e segurança articular.
+                    Seja no acompanhamento presencial ou na consultoria, cada exercício é ajustado para a sua estrutura, garantindo máxima tensão mecânica com segurança total.
                   </p>
                 </div>
               </div>
@@ -63,9 +63,9 @@ export default function Methodology() {
                   <Microscope size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-white">Bioquímica (CRN)</h3>
+                  <h3 className="text-xl font-bold mb-2 text-white italic uppercase">Bioquímica (CRN)</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    Nutrição funcional que respeita seus hormônios e metabolismo, garantindo energia para o treino e queima calórica eficiente.
+                    Nutrição funcional que respeita seu metabolismo. O foco é fornecer o substrato exato para sua performance no treino e recuperação acelerada.
                   </p>
                 </div>
               </div>
@@ -74,7 +74,9 @@ export default function Methodology() {
 
           {/* Lado Direito: Checklist de Entrega */}
           <div className="lg:pl-12">
-            <h4 className="text-2xl font-bold mb-8 text-white">Como funciona a entrega:</h4>
+            <h4 className="text-2xl font-bold mb-8 text-white uppercase italic tracking-tighter">
+              O que você recebe na <br /> Estratégia Integrada:
+            </h4>
             <ul className="space-y-4">
               {points.map((point, i) => (
                 <motion.li 
@@ -85,14 +87,14 @@ export default function Methodology() {
                   className="flex items-center gap-3 text-gray-300"
                 >
                   <CheckCircle2 size={20} className="text-brand-lime shrink-0" />
-                  <span>{point}</span>
+                  <span className="text-lg">{point}</span>
                 </motion.li>
               ))}
             </ul>
             
             <div className="mt-10 p-6 rounded-xl border border-brand-lime/20 bg-brand-lime/5">
-              <p className="text-brand-lime font-medium text-sm">
-                "O resultado estético é apenas o subproduto de um corpo que funciona em perfeita harmonia química e mecânica."
+              <p className="text-brand-lime font-medium text-sm italic">
+                "Atendimento presencial em Juazeiro Do Norte e consultoria de alto nível para onde você estiver."
               </p>
             </div>
           </div>
