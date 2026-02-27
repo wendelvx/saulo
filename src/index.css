@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cores Customizadas */
+  --color-brand-black: #0A0A0A;
+  --color-brand-lime: #D9FF00; /* Um verde lima vibrante */
+  --color-brand-ice: #F8F9FA;
+  
+  /* Fontes (Certifique-se de importá-las no index.html ou via @import) */
+  --font-display: "Inter", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Reset básico para o Dark Mode */
+body {
+  @apply bg-brand-black text-brand-ice font-body antialiased;
+}
