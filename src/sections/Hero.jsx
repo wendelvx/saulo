@@ -26,26 +26,26 @@ export default function Hero() {
           </p>
 
           <a 
-            href="https://wa.me/558899991074?text=Olá%20Saulo%2C%20vim%20pelo%20site%20e%20quero%20entender%20como%20funciona%20a%20estratégia%20integrada."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-brand-lime text-black px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_20px_rgba(217,255,0,0.3)] text-center"
-          >
-            QUERO MINHA CONSULTORIA
-          </a>
+  href="https://wa.me/558899991074?text=Olá%20Saulo%2C%20vim%20pelo%20site%20e%20quero%20entender%20como%20funciona%20a%20estratégia%20integrada."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-brand-lime text-black px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_20px_rgba(217,255,0,0.3)] text-center"
+>
+  QUERO MINHA CONSULTORIA
+</a>
         </motion.div>
 
-        {/* Imagem do Saulo - Ajustada para ser mais leve (subtle scale + easeOut) */}
+        {/* Imagem do Saulo - Enquadramento Moderno e Elegante */}
         <motion.div 
-          initial={{ opacity: 0, scale: 0.98, y: 10 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
           className="relative flex justify-center order-1 lg:order-2"
         >
           {/* Brilho de fundo (Glow) suave */}
           <div className="absolute inset-0 bg-brand-lime/10 blur-[120px] rounded-full" />
           
-          {/* Container "Bento" Clean */}
+          {/* Container "Bento" Clean: fundo branco para casar com a foto e borda sutil */}
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-white shadow-2xl">
             <img 
               src="/saulo-vitorino.webp" 
@@ -53,6 +53,7 @@ export default function Hero() {
               className="relative z-10 max-h-[500px] lg:max-h-[600px] w-full object-contain"
             />
             
+            {/* Gradiente de fusão: suaviza a base branca da foto com o fundo preto do site */}
             <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-brand-black via-brand-black/20 to-transparent z-20 pointer-events-none" />
           </div>
         </motion.div>
