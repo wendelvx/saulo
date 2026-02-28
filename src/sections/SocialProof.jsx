@@ -12,16 +12,33 @@ export default function SocialProof() {
   return (
     <section id="resultados" className="py-24 bg-brand-black overflow-hidden">
       <div className="container mx-auto px-6 mb-16 text-center">
-        <h2 className="text-3xl lg:text-5xl font-display font-black mb-4">
+        {/* Título com Fade-in Up */}
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-3xl lg:text-5xl font-display font-black mb-4 uppercase"
+        >
           RESULTADOS QUE <span className="text-brand-lime">FALAM POR SI</span>
-        </h2>
-        <p className="text-gray-500">O que meus alunos da consultoria integrada estão alcançando:</p>
+        </motion.h2>
+        
+        {/* Descrição com Fade-in Up e leve delay */}
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-gray-500"
+        >
+          O que meus alunos da consultoria integrada estão alcançando:
+        </motion.p>
       </div>
 
       {/* Slider Infinito (Marquee) */}
       <div className="flex overflow-hidden group">
         <motion.div 
-          className="flex gap-6 whitespace-nowrap w-max" // w-max garante o cálculo correto do loop
+          className="flex gap-6 whitespace-nowrap w-max"
           initial={{ x: 0 }}
           animate={{ x: "-50%" }}
           transition={{ 
@@ -30,7 +47,6 @@ export default function SocialProof() {
             repeat: Infinity 
           }}
         >
-          {/* Duplicamos a lista para o efeito infinito ser perfeito */}
           {[...testimonials, ...testimonials].map((t, i) => (
             <div 
               key={i} 
