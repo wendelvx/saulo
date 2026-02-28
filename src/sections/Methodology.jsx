@@ -17,26 +17,43 @@ export default function Methodology() {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <motion.span 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="text-brand-lime font-bold tracking-[0.2em] text-sm uppercase"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-brand-lime font-bold tracking-[0.2em] text-sm uppercase inline-block"
           >
             Meu Diferencial Técnico
           </motion.span>
-          <h2 className="text-4xl lg:text-6xl font-display font-black mt-4 mb-6 uppercase italic">
+
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl lg:text-6xl font-display font-black mt-4 mb-6 uppercase italic"
+          >
             Metodologia <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Cérebro Único</span>
-          </h2>
-          <p className="text-gray-400 text-lg leading-relaxed">
+          </motion.h2>
+
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-gray-400 text-lg leading-relaxed"
+          >
             Eu elimino o abismo entre a sua alimentação e o seu treino. Em vez de profissionais que não se comunicam, você tem uma <span className="text-white font-medium">estratégia única e integrada</span>, desenhada por quem domina as duas áreas.
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Lado Esquerdo: Cards Técnicos */}
+          {/* Lado Esquerdo: Cards Técnicos - MANTIDO DESLOCAMENTO X */}
           <div className="space-y-6">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
             >
               <div className="flex items-start gap-4">
@@ -55,6 +72,7 @@ export default function Methodology() {
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
             >
@@ -72,7 +90,7 @@ export default function Methodology() {
             </motion.div>
           </div>
 
-          {/* Lado Direito: Checklist de Entrega */}
+          {/* Lado Direito: Checklist de Entrega - MANTIDO DESLOCAMENTO Y */}
           <div className="lg:pl-12">
             <h4 className="text-2xl font-bold mb-8 text-white uppercase italic tracking-tighter">
               O que você recebe na <br /> Estratégia Integrada:
@@ -83,6 +101,7 @@ export default function Methodology() {
                   key={i}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   className="flex items-center gap-3 text-gray-300"
                 >
